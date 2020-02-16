@@ -71,8 +71,7 @@ body {
 
                     &-content {
                         background: #e6e6e6;
-                        box-shadow: inset -2px -2px 0 0 #b4b4b4,
-                            inset 2px 2px 0 0 #ffffff;
+                        box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
                         display: none;
                         position: absolute;
                         top: 38px;
@@ -81,8 +80,7 @@ body {
                         &-option {
                             background: #f0f0f0;
                             border: 1px solid #808080;
-                            box-shadow: inset -1px -1px 0 0 #b4b4b4,
-                                inset 1px 1px 0 0 #ffffff;
+                            box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
                             color: #110038;
                             font-family: ChakraPetch-Regular, Sans-serif;
                             font-size: 16px;
@@ -130,8 +128,7 @@ body {
             &-input {
                 background: #ffffff;
                 border: 1px solid #979797;
-                box-shadow: inset -2px -2px 0 0 #e6e6e6,
-                    inset 2px 2px 0 0 #000000;
+                box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
                 color: #b4b4b4;
                 font-size: 16px;
                 height: 48px;
@@ -145,8 +142,7 @@ body {
                 align-self: center;
                 background: #e6e6e6;
                 border: 1px solid #808080;
-                box-shadow: inset -1px -1px 0 0 #b4b4b4,
-                    inset 1px 1px 0 0 #ffffff;
+                box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
                 color: #b4b4b4;
                 font-family: ChakraPetch-Regular, sans-serif;
                 font-size: 16px;
@@ -162,7 +158,7 @@ body {
         }
     }
 
-    .menu-sugerencia {
+    .menu-sugerencias {
         margin-top: 65px;
 
         &--title {
@@ -181,14 +177,49 @@ body {
         &--cards-wrapper {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 10px;
 
             .sugerencias-card-wrapper {
-                // max-height: 1000px;
-
                 &--img-container {
-                    // border: 2px solid hsla(0, 0%, 0%, 0.5);
-                    // float: left;
-                    // margin: 10px;
+                    color: white;
+                    margin: 0 1rem 1rem 0;
+                    text-align: center;
+
+                    &--note {
+                        &:hover {
+                            border: 2px solid hsla(0, 0%, 0%, 0.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-tendencias {
+        margin-top: 65px;
+
+        &--title {
+            background: #fffafe;
+            border: 1px solid #e6bbe2;
+            box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+            color: #110038;
+            display: flex;
+            align-items: center;
+            font-family: ChakraPetch-Regular, sans-serif;
+            font-size: 14px;
+            letter-spacing: 0;
+            padding: 7px 0 7px 7px;
+        }
+
+        &--cards-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            .tendencias-card-wrapper {
+                &--img-container {
                     color: white;
                     margin: 0 1rem 1rem 0;
                     text-align: center;

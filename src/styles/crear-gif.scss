@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    background-color: #fff4fd;
+
+    .header {
+        &--upper-bar {
+            align-items: center;
+            background: rgb(65, 128, 246);
+            background: linear-gradient(
+                90deg,
+                rgba(65, 128, 246, 1) 0%,
+                rgba(247, 201, 243, 1) 100%
+            );
+            box-shadow: 0 1px 0 0 #110038;
+            color: #ffffff;
+            display: flex;
+            font-size: 12px;
+            height: 23px;
+            padding-left: 15px;
+        }
+    }
+
+    .wrapper-page {
+        padding: 0 5%;
+
+        .crear-guifos-section {
+            margin-top: 20px;
+
+            &--header {
+                align-items: center;
+                background: rgb(65, 128, 246);
+                background: linear-gradient(
+                    90deg,
+                    rgba(65, 128, 246, 1) 0%,
+                    rgba(247, 201, 243, 1) 100%
+                );
+                box-shadow: 0 1px 0 0 #110038;
+                color: #ffffff;
+                display: flex;
+                font-size: 12px;
+                height: 23px;
+                padding-left: 15px;
+            }
+
+            &--content {
+                background: #e6e6e6;
+                box-shadow: inset -2px -2px 0 0 #b4b4b4,
+                    inset 2px 2px 0 0 #ffffff;
+                padding: 25px;
+
+                &-video {
+                    // height: 30%;
+                    width: 40%;
+                }
+
+                &-header {
+                    color: #ffffff;
+                    font-family: ChakraPetch-Bold;
+                    font-size: 14px;
+                    letter-spacing: 0;
+                }
+
+                &-title {
+                    color: #110038;
+                    font-family: ChakraPetch-Bold;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 22px;
+                }
+
+                &-first-text {
+                    color: #110038;
+                    font-family: ChakraPetch-Regular;
+                    font-size: 14px;
+                    letter-spacing: 0;
+                    line-height: 20px;
+                }
+
+                &-list-item {
+                    color: #110038;
+                    font-family: ChakraPetch-Regular;
+                    font-size: 14px;
+                    letter-spacing: 0;
+                    line-height: 20px;
+                }
+
+                &-second-text {
+                    color: #110038;
+                    font-family: ChakraPetch-Regular;
+                    font-size: 14px;
+                    letter-spacing: 0;
+                    line-height: 20px;
+                }
+
+                &-actions {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    &-cancelar {
+                        background: #fff4fd;
+                        border: 1px solid #110038;
+                        box-shadow: inset -1px -1px 0 0 #997d97,
+                            inset 1px 1px 0 0 #ffffff;
+                        margin-right: 10px;
+                    }
+                    &-comenzar {
+                        background: #f7c9f3;
+                        border: 1px solid #110038;
+                        box-shadow: inset -1px -1px 0 0 #997d97,
+                            inset 1px 1px 0 0 #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

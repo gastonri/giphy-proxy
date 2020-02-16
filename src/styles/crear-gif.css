@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  background-color: #fff4fd;
+}
+
+.wrapper .header--upper-bar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #4180f6;
+  background: -webkit-gradient(linear, left top, right top, from(#4180f6), to(#f7c9f3));
+  background: linear-gradient(90deg, #4180f6 0%, #f7c9f3 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  height: 23px;
+  padding-left: 15px;
+}
+
+.wrapper .wrapper-page {
+  padding: 0 5%;
+}
+
+.wrapper .wrapper-page .crear-guifos-section {
+  margin-top: 20px;
+}
+
+.wrapper .wrapper-page .crear-guifos-section--header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #4180f6;
+  background: -webkit-gradient(linear, left top, right top, from(#4180f6), to(#f7c9f3));
+  background: linear-gradient(90deg, #4180f6 0%, #f7c9f3 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  height: 23px;
+  padding-left: 15px;
+}
+
+.wrapper .wrapper-page .crear-guifos-section--content {
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+  padding: 25px;
+}
+
+.wrapper .wrapper-page .crear-guifos-section--content-video {
+  width: 40%;
+}
+
+.wrapper .wrapper-page .crear-guifos-section--content-header {
+  color: #ffffff;
+  font-family: ChakraPetch-Bold;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.wrapper .wrapper-page .crear-guifos-section--content-title {
+  color: #110038;
+  font-family: ChakraPetch-Bold;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.wrapper .wrapper-page .crear-guifos-section--content-first-text {
+  color: #110038;
+  font-family: ChakraPetch-Regular;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.wrapper .wrapper-page .crear-guifos-section--content-list-item {
+  color: #110038;
+  font-family: ChakraPetch-Regular;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.wrapper .wrapper-page .crear-guifos-section--content-second-text {
+  color: #110038;
+  font-family: ChakraPetch-Regular;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.wrapper .wrapper-page .crear-guifos-section--content-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.wrapper .wrapper-page .crear-guifos-section--content-actions-cancelar {
+  background: #fff4fd;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  margin-right: 10px;
+}
+
+.wrapper .wrapper-page .crear-guifos-section--content-actions-comenzar {
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+}
+/*# sourceMappingURL=crear-gif.css.map */

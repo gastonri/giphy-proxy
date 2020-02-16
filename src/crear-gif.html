@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/styles/crear-gif.css" rel="stylesheet">
+    <title>Crear Gif</title>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="./src/js/crearGif.js"></script>
+    <script>
+        window.onload = cargarEventos;
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header--upper-bar">
+            ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+        </div>
+        <div class="wrapper-page">
+            <div class="crear-guifos-section">
+                <div class="crear-guifos-section--header">Crear Guifos</div>
+                <div class="crear-guifos-section--content" id="crear-section">
+                    <h3 class="crear-guifos-section--content-title">Aquí podrás crear tus propios guifos</h3>
+                    <p class="crear-guifos-section--content-first-text">Crear tu guifo es muy fácil, graba cualquier
+                        imagen
+                        con tu cámara y obtén guifos personalizados. Los
+                        pasos para crear tu guifo son:</p>
+                    <ol>
+                        <li class="crear-guifos-section--content-list-item">Dar permisos de acceso a la cámara (sólo por
+                            el
+                            tiempo de uso) </li>
+                        <li class="crear-guifos-section--content-list-item">Capturar tu momento guifo</li>
+                        <li class="crear-guifos-section--content-list-item">Revisar el momento</li>
+                        <li class="crear-guifos-section--content-list-item">Listo para subir y compartir!</li>
+                    </ol>
+                    <p class="crear-guifos-section--content-second-text">¿Quieres comenzar a crear tu guifo ahora?
+                    </p>
+                    <div class="crear-guifos-section--content-actions">
+                        <button class="crear-guifos-section--content-actions-cancelar">Cancelar</button>
+                        <button class="crear-guifos-section--content-actions-comenzar" id="boton-comenzar">Comenzar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

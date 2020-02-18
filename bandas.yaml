@@ -1,0 +1,157 @@
+swagger: "2.0"
+info:
+  description: "Interfaz para obtener información de artistas."
+  version: "1.0.0"
+  title: "Swagger Artistas"
+  termsOfService: "http://swagger.io/terms/"
+paths:
+  /artistas:
+    get:
+      tags: 
+      - "artistas"
+      summary: "Obtener todos los artistas de la base de datos"
+      description: ""
+      operationId: "obtenerArtistas"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              type: "object"
+              properties:
+                id: 
+                  type: "integer"
+                  format: "int64"
+                name:
+                  type: "string"
+                startYear:
+                  type: "integer"
+                  format: "int64"
+                genre:
+                  type: "array"
+                  items:
+                    type: "string"
+                discography:
+                  type: "array"
+                  items:
+                    type: "object"
+                    properties:
+                      albumName:
+                        type: "string"
+                      releaseYear:
+                        type: "integer"
+                      songs:
+                        type: "array"
+                        items:
+                          type: "string"
+            example:
+              - id: 1
+                name: "Crumb"
+                startYear: 2016
+                genre: 
+                  - "indie rock"
+                  - "Psychodelic rock"
+                  - "neo-psychedelia" 
+                  - "dream pop"
+                discography:
+                  - albumName: "Crumb"
+                    releaseYear: 2016
+                    songs:
+                      - "Bones"
+                      - "Vinta"
+                      - "So Tired"
+                  - albumName: "Locket"
+                    releaseYear: 2017
+                    songs:
+                      - "Plants"
+                      - "Recently Played"
+                      - "Thirty-Nine"
+                      - "Locket"
+                  - albumName: "Jinx"
+                    releaseYear: 2019
+                    songs:
+                      - "Cracking"
+                      - "Nina"
+                      - "Ghostride"
+                      - "Fall Down"
+                      - "M.R."
+                      - "The Letter"
+                      - "Part III"
+                      - "And It Never Ends"
+              - id: 2
+                name: "Telescopios"
+                startYear: 2013
+                genre: 
+                  - "indie rock"
+                  - "Psychodelic rock"
+                discography:
+                  - albumName: "El Templo Sudoku"
+                    releaseYear: 2015
+                    songs:
+                      - "Fuego"
+                      - "Ninja"
+                      - "Fucsia"
+                      - "Ciudad de Tampa"
+                      - "Gps"
+                      - "Sabe vevo"
+                  - albumName: "Doble de riesgo"
+                    releaseYear: 2018
+                    songs:
+                      - "Viña de mar"
+                      - "El Famoso"
+                      - "Las prioridades"
+                      - "Tus Amigos de la Cia"
+                      - "El Trópico"
+                      - "Para Z mall"
+        400:
+          description: "Invalid status value"
+    post:
+      tags:
+      - "artistas"
+      summary: "Agregar un artista"
+      operationId: "agregarArtista"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Objeto artista que se agregara a la base de datos"
+        required: true
+        schema:
+          type: "object"
+          properties:
+            id: 
+              type: "integer"
+              format: "int64"
+            name:
+              type: "string"
+            startYear:
+              type: "integer"
+              format: "int64"
+            genre:
+              type: "array"
+              items:
+                type: "string"
+            discography:
+              type: "array"
+              items:
+                type: "object"
+                properties:
+                  albumName:
+                    type: "string"
+                  releaseYear:
+                    type: "integer"
+                  songs:
+                    type: "array"
+                    items:
+                      type: "string"
+      responses:
+        207:
+          description: "Se guardó correctamente"
+        405:
+          description: "Objeto incorrecto"

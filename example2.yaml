@@ -1,0 +1,68 @@
+openapi: 3.0.2
+# Cabecera del documento.
+info:
+  title: test api model
+  description: Modelo api test 
+  version: 1.0.0
+# Fin cabecera del documento.
+
+# Instancias de servidores disponibles para los paths.
+servers:
+- url: /myServer
+# Fin Instancias.
+
+# Paths, listado de paths que vamos a definir para nuestra api.
+paths:
+  /personas: # 1er endPoint
+    get: # Metodo: GET, POST, PUT, etc
+      summary: Obtener todas las personas 
+      description: Descripcion 1
+      responses: # Reponse. Se puede agregar todo los codigos posibles.
+        200:
+          description: OK
+          content: 
+            application/json:
+              schema:
+                type: array
+                items:
+                # $ref es una referencia a un componente definido.
+                  "$ref": "#/components/schemas/persona"
+        404:
+          description: No hay personas dadas del alta.
+  /personas/{id}: # 2do Endpoint
+    get:
+      summary: Obtener persona por Id
+      description: Description 2
+      parameters: 
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        200:
+          description: OK
+          content: 
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/persona"
+        404:
+          description: Persona no encontrada
+# Componentes: Aca se definen todos los componentes que vamos a utlizar.
+# pueden ser los objetos ya modelados con su respectivos tipos de datos.
+# En este caso se define el objeto "persona" con sus atributos.
+# 
+components:
+  schemas:
+    persona:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+          example: Juan
+        edad:
+          type: integer
+

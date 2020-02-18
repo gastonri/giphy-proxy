@@ -27,7 +27,7 @@ const buscarSugerencias = () => {
     const url = `https://api.giphy.com/v1/gifs/random?${API_KEY}`;
     let promesas = [];
 
-    for (let index = 0; index <= 3; index++) {
+    for (let index = 0; index <= 6; index++) {
         promesas.push(fetchContent(url));
     }
 
